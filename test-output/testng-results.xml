@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Invalid contentType]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2965" started-at="2020-12-29T18:55:50Z" finished-at="2020-12-29T18:55:53Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2965" started-at="2020-12-29T18:55:50Z" finished-at="2020-12-29T18:55:53Z">
+      <class name="RatesApiTests.ExchangeRatesTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:RatesApiTests.ExchangeRatesTests@46d56d67]" name="setup" is-config="true" duration-ms="722" started-at="2020-12-30T00:25:50Z" finished-at="2020-12-30T00:25:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getLatestRates()[pri:0, instance:RatesApiTests.ExchangeRatesTests@46d56d67]" name="getLatestRates" duration-ms="2220" started-at="2020-12-30T00:25:51Z" finished-at="2020-12-30T00:25:53Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Invalid contentType]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getLatestRates -->
+      </class> <!-- RatesApiTests.ExchangeRatesTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
