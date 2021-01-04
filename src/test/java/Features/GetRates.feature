@@ -1,4 +1,4 @@
-Feature: Title of your feature
+Feature: Rates API
   Verify GET Operations for exchage rates
 
   
@@ -6,7 +6,8 @@ Feature: Title of your feature
     Given Exchange rate API
     When Get latest Rates
     Then response code is 200
-	
+    And Verify list of countries for which exchange rate available
+    	
 	Scenario: Verify todays date is returned by exchange rate API
     Given Exchange rate API
     When Get latest Rates
@@ -31,4 +32,13 @@ Feature: Title of your feature
     Given Exchange rate API
     When Get latest Rates
     Then Verify error msg for future date
-	
+  
+	Scenario: Verify response of API when base is set to USD
+    Given Exchange rate API
+    When Get latest Rates
+    Then Verify Response base set to USD
+    
+	Scenario: Verify API gives conversion rates for following countries 
+    Given Exchange rate API
+    When Get latest Rates
+    Then Verify countries available for conversion rate
